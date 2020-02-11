@@ -17,7 +17,7 @@ const screenshot = `screenshots/${Date.now()}_economictimes.png`;
 
 		console.log(' page.title: ' + pageTitle);
 		await page.screenshot({
-			fullPage: true,
+			fullPage: true, // then will take entire page screenshot
 			path: screenshot,
 		});
 

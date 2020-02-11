@@ -10,7 +10,7 @@ const screenshot = `${Math.random()}_github.png`;
 	await page.type('#password', 'testname');
 	await page.click('[name="commit"]');
 	await page.waitForNavigation();
-	await page.screenshot({ path: screenshot });
+	await page.screenshot({ path: screenshot, fullPage: true });
 	browser.close();
 	console.log('See screenshot: ' + screenshot);
 })();
